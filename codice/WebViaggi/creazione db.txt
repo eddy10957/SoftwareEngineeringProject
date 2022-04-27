@@ -1,0 +1,27 @@
+Create table Pacchetti(
+codice integer primary key,
+descrizione varchar(50),
+citta varchar(20)
+);
+
+create table servizi(
+codice integer primary key,
+prezzoPerPersona number,
+nomeHotel varchar(50),
+categgoriaHotel varchar(30),
+descrizioneHotel varchar(70),
+localitaArrivo varchar(30),
+localitaPartenza varchar(30),
+descrizioneMenu varchar(30),
+tipoPasto varchar(10),
+museo varchar(30),
+duratavisita integer,
+tipoServizio varchar,
+PacchettoRiferimento integer
+);
+
+Create table ordini(
+codice integer primary key,
+serviziscelti varchar(50),
+prezzopagato number
+); 

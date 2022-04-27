@@ -1,0 +1,273 @@
+2020-12-20 12:01:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE PACCHETTI(
+CODICE INT PRIMARY KEY,
+DESCRIZIONE VARCHAR(50),
+CITTA VARCHAR(20)
+)
+
+CREATE[*] TABLE SERVIZI(
+CODICE INTEGER PRIMARY KEY,
+PREZZOPERPERSONA NUMBER,
+NOMEHOTEL VARCHAR(50),
+CATEGGORIAHOTEL VARCHAR(30),
+DESCRIZIONEHOTEL VARCHAR(30),
+LOCALITAARRIVO VARCHAR(30),
+LOCALITAPARTENZA VARCHAR(30),
+DESCRIZIONEMENU VARCHAR(30),
+TIPOPASTO VARCHAR(10),
+MUSEO VARCHAR(30),
+DURATAVISITA INTEGER,
+TIPOSERVIZIO VARCHAR
+) "; SQL statement:
+Create table Pacchetti(
+codice int primary key,
+descrizione varchar(50),
+citta varchar(20)
+)
+
+create table servizi(
+codice integer primary key,
+prezzoPerPersona number,
+nomeHotel varchar(50),
+categgoriaHotel varchar(30),
+descrizioneHotel varchar(30),
+localitaArrivo varchar(30),
+localitaPartenza varchar(30),
+descrizioneMenu varchar(30),
+tipoPasto varchar(10),
+museo varchar(30),
+duratavisita integer,
+tipoServizio varchar
+) [42000-196]
+2020-12-20 12:01:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE PACCHETTI(
+CODICE INTEGER PRIMARY KEY,
+DESCRIZIONE VARCHAR(50),
+CITTA VARCHAR(20)
+)
+
+CREATE[*] TABLE SERVIZI(
+CODICE INTEGER PRIMARY KEY,
+PREZZOPERPERSONA NUMBER,
+NOMEHOTEL VARCHAR(50),
+CATEGGORIAHOTEL VARCHAR(30),
+DESCRIZIONEHOTEL VARCHAR(30),
+LOCALITAARRIVO VARCHAR(30),
+LOCALITAPARTENZA VARCHAR(30),
+DESCRIZIONEMENU VARCHAR(30),
+TIPOPASTO VARCHAR(10),
+MUSEO VARCHAR(30),
+DURATAVISITA INTEGER,
+TIPOSERVIZIO VARCHAR
+) "; SQL statement:
+Create table Pacchetti(
+codice integer primary key,
+descrizione varchar(50),
+citta varchar(20)
+)
+
+create table servizi(
+codice integer primary key,
+prezzoPerPersona number,
+nomeHotel varchar(50),
+categgoriaHotel varchar(30),
+descrizioneHotel varchar(30),
+localitaArrivo varchar(30),
+localitaPartenza varchar(30),
+descrizioneMenu varchar(30),
+tipoPasto varchar(10),
+museo varchar(30),
+duratavisita integer,
+tipoServizio varchar
+) [42000-196]
+2020-12-20 12:02:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE PACCHETTI(
+CODICE INTEGER PRIMARY KEY,
+DESCRIZIONE VARCHAR(50),
+CITTA VARCHAR(20)
+)
+
+CREATE[*] TABLE SERVIZI(
+CODICE INTEGER PRIMARY KEY,
+PREZZOPERPERSONA NUMBER,
+NOMEHOTEL VARCHAR(50),
+CATEGGORIAHOTEL VARCHAR(30),
+DESCRIZIONEHOTEL VARCHAR(70),
+LOCALITAARRIVO VARCHAR(30),
+LOCALITAPARTENZA VARCHAR(30),
+DESCRIZIONEMENU VARCHAR(30),
+TIPOPASTO VARCHAR(10),
+MUSEO VARCHAR(30),
+DURATAVISITA INTEGER,
+TIPOSERVIZIO VARCHAR
+) "; SQL statement:
+Create table Pacchetti(
+codice integer primary key,
+descrizione varchar(50),
+citta varchar(20)
+)
+
+create table servizi(
+codice integer primary key,
+prezzoPerPersona number,
+nomeHotel varchar(50),
+categgoriaHotel varchar(30),
+descrizioneHotel varchar(70),
+localitaArrivo varchar(30),
+localitaPartenza varchar(30),
+descrizioneMenu varchar(30),
+tipoPasto varchar(10),
+museo varchar(30),
+duratavisita integer,
+tipoServizio varchar
+) [42000-196]
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('1', '90','Hilton Hotel','4 stelle','Hotel in centro a Sorrento', 'null','null','null','null','null',null,'H','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('2', '90','Bristol','4 stelle','Hotel a due minuti dalla stazione', 'null','null','null','null','null',null,'H','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('3', '40','null', 'null','null','aereoporto','sorrento','null','null','null',null,'T','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('4', '40','null','null','null','sorrento','aereoporto', 'null','null','null',null,'T','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('5', '30','null','null','null', 'null','null','menu di pesce','CENA','null',null,'R','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('6', '30','null','null','null', 'null','null',' sapori della terra','PRANZO','null',null,'R','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2020-12-20 12:03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Data conversion error converting "'60''R' (SERVIZI: DURATAVISITA INTEGER)"; SQL statement:
+INSERT INTO servizi values ('7', '15','null','null','null', 'null','null','null','null','Correale','60''R','1') -- ('7', '15', 'null', 'null', 'null', 'null', 'null', 'null', 'null', 'Correale', '60''R', '1') [22018-196]
+2020-12-20 12:04:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column count does not match; SQL statement:
+INSERT INTO servizi values ('7', '15','null','null','null', 'null','null','null','null','Correale','60''R','1') [21002-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:263)
+	at org.h2.engine.Session.prepareLocal(Session.java:578)
+	at org.h2.engine.Session.prepareCommand(Session.java:519)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1204)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:176)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1380)
+	at org.h2.server.web.WebApp.query(WebApp.java:1053)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1015)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1002)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)

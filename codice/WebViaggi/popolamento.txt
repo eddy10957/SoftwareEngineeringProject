@@ -1,0 +1,27 @@
+insert into pacchetti values ('1','Scopri Sorrento e la costiera','Sorrento');
+insert into pacchetti values ('2','A spasso per Cambridge','Cambridge');
+insert into pacchetti values ('3','La romantica Parigi','Parigi');
+insert into pacchetti values ('4','La città più grigia d Europa,Berlino','Berlino');
+insert into pacchetti values ('5','Barcellona by night','Barcellona');
+
+INSERT INTO servizi values ('1', '90','Hilton Hotel','4 stelle','Hotel in centro a Sorrento', 'null','null','null','null','null',null,'H','1');
+INSERT INTO servizi values ('2', '90','Bristol','4 stelle','Hotel a due minuti dalla stazione', 'null','null','null','null','null',null,'H','1');
+
+INSERT INTO servizi values ('3', '40','null', 'null','null','aereoporto','sorrento','null','null','null',null,'T','1');
+INSERT INTO servizi values ('4', '40','null','null','null','sorrento','aereoporto', 'null','null','null',null,'T','1');
+
+INSERT INTO servizi values ('5', '30','null','null','null', 'null','null','menu di pesce','CENA','null',null,'R','1');
+INSERT INTO servizi values ('6', '30','null','null','null', 'null','null',' sapori della terra','PRANZO','null',null,'R','1');
+
+INSERT INTO servizi values ('7', '15','null','null','null', 'null','null','null','null','Correale','60','R','1');
+
+
+
+
+
+
+
+
+
+
+
